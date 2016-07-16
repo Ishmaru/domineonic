@@ -1,0 +1,31 @@
+<?xml version="1.0" standalone="no"?>
+
+<tech-tree>
+	<description value="napoleonic fixed and cleaned tech tree"/>
+	<attack-types>
+		<attack-type name="bullet"/>
+		<attack-type name="blade"/>
+		<attack-type name="explosive"/>
+	</attack-types>
+	<armor-types>
+		<armor-type name="building"/>
+		<armor-type name="infantry"/>
+		<armor-type name="cavalry"/>
+		<armor-type name="artillery"/>
+		<armor-type name="organic"/>
+	</armor-types>
+	<damage-multipliers>
+		<damage-multiplier attack="bullet" armor="building" value="0.5"/>
+		<damage-multiplier attack="bullet" armor="cavalry" value="1.1"/>
+		<damage-multiplier attack="bullet" armor="artillery" value="0.7"/>
+
+		<damage-multiplier attack="blade" armor="building" value="0.5"/>
+		<damage-multiplier attack="blade" armor="infantry" value="0.7"/>
+		<damage-multiplier attack="blade" armor="artillery" value="1.0"/>
+		<damage-multiplier attack="blade" armor="cavalry" value="0.5"/>
+
+		<damage-multiplier attack="explosive" armor="building" value="1.0"/>
+		<damage-multiplier attack="explosive" armor="infantry" value="1.3"/>
+		<damage-multiplier attack="explosive" armor="cavalry" value="0.5"/>
+	</damage-multipliers>
+</tech-tree>

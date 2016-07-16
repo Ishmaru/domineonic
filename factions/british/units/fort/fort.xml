@@ -1,0 +1,156 @@
+<?xml version="1.0" standalone="no" ?>
+<unit>
+	<!-- *** parameters *** -->
+	<parameters>
+		<size value="18" />
+		<height value="1" />
+		<max-hp value="100000" regeneration="100"/>
+		<max-ep value="0" />
+		<armor value="100000" />
+		<armor-type value="building"/>				
+		<sight value="30" />
+		<time value="500" />
+		<multi-selection value="false" />
+		<cellmap value="true">
+			<row value="111111011111111110"/>
+			<row value="100000011111111110"/>
+			<row value="100000000111111110"/>
+			<row value="100000000000001110"/>
+			<row value="111110000000001110"/>
+			<row value="111110000000001110"/>
+			<row value="111110000000001110"/>
+			<row value="111110000000001110"/>
+			<row value="111110000000001110"/>
+			<row value="111110000000111111"/>
+			<row value="111110000000111111"/>
+			<row value="100000000000111111"/>
+			<row value="100000000000111111"/>
+			<row value="100000000000111111"/>
+			<row value="100000000000111111"/>
+			<row value="100000000000111111"/>
+			<row value="100010010000111111"/>
+			<row value="111110011110111111"/>
+		</cellmap>
+		<levels/>
+		<fields>
+			<field value="land" />
+		</fields>
+		<properties>
+		</properties>
+		<light enabled="true" red="0.8" green="0.8" blue="0.5"/>
+		<unit-requirements/>
+		<upgrade-requirements />
+		<resource-requirements>
+			<resource name="gold" amount="1000" />
+			<resource name="stone" amount="1000" />
+			<resource name="wood" amount="500" />
+			<resource name="housing" amount="-10" />
+			<resource name="housing" amount="-10" />
+		</resource-requirements>
+		<resources-stored>
+			<resource name= "gold" amount="1000"/>
+			<resource name= "wood" amount="1000"/>			
+			<resource name= "stone" amount="600"/>
+			<resource name="housing" amount="10" />
+			<resource name="food" amount="10" />			
+		</resources-stored>
+		<image path="images/castle.bmp" />
+		<image-cancel path="../infantry/images/tech_cancel.bmp"/>
+		<meeting-point value="true" image-path="../barracks/images/meeting_point.bmp"/>
+		<selection-sounds enabled="true">
+			<sound path="../barracks/sounds/tech_click.wav" />
+		</selection-sounds>
+		<command-sounds enabled="true">
+			<sound path="../barracks/sounds/tech_click.wav" />
+		</command-sounds>
+	</parameters>
+	
+	<!-- *** skills *** -->
+	<skills>
+
+		<skill>
+			<type value="stop" />
+			<name value="stop_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="100" />
+			<animation path="models/castle.g3d" />
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="12"/>
+                        			<target value="all"/>
+				<max-hp value="0"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="4"/>
+				<armor value="100"/>
+				<move-speed value="0"/>
+				<production-speed value="100"/>
+				<particles value="true">
+				<!--originator-particle-file path="../../../../particles/repair.xml"/-->
+				<!affected-particle-file path="../../../../particles/repair.xml"/>
+				</particles>
+                        		</attack-boost>
+
+		</skill>
+		
+		<skill>
+			<type value="be_built" />
+			<name value="be_built_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/castle.g3d" />
+			<sound enabled="false" />
+		</skill>	
+		
+		<skill>
+			<type value="produce" />
+			<name value="produce_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="models/castle.g3d" />
+			<sound enabled="false" />
+			<attack-boost>
+				<allow-multiple-boosts value="false" />
+				<radius value="12"/>
+                        			<target value="all"/>
+				<max-hp value="0"/>
+				<max-ep value="0"/>
+				<sight value="0"/>
+				<attack-strenght value="0"/>
+				<attack-range value="4"/>
+				<armor value="100"/>
+				<move-speed value="0"/>
+				<production-speed value="100"/>
+				<particles value="true">
+				<!--originator-particle-file path="../../../../particles/repair.xml"/-->
+				<!affected-particle-file path="../../../../particles/repair.xml"/>
+				</particles>
+                        		</attack-boost>
+		</skill>	
+		
+		<skill>
+			<type value="die" />
+			<name value="die_skill"/>		
+			<ep-cost value="0" />
+			<speed value="300" />
+			<anim-speed value="300" />
+			<animation path="../camp/destruction_models/castle_destruction.g3d" />
+			<sound enabled="true" start-time="0">
+				<sound-file path="../barracks/sounds/tech_building_fall2.wav"/>
+			</sound>			
+			<fade value="false"/>
+		</skill>
+
+	</skills>
+	
+	<!-- *** commands *** -->
+	<commands>
+	
+
+	</commands>
+</unit>

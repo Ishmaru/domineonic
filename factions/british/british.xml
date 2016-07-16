@@ -1,0 +1,49 @@
+<?xml version="1.0" standalone="no"?>
+
+<faction>
+	<starting-resources>
+		<resource name="gold" amount="1000"/>
+		<resource name="wood" amount="500"/>	
+		<resource name="stone" amount="500"/>	
+		<resource name="food" amount="50"/>	
+	</starting-resources>
+	<starting-units>
+		<unit name="fort" amount="0"/>
+		<unit name="camp" amount="1"/>
+		<unit name="engineer" amount="3"/>
+		<unit name="cow" amount="1"/>
+		<unit name="cannon" amount="0"/>
+		<unit name="infantry" amount="2"/>
+		<unit name="battle_armor" amount="0"/>
+
+	</starting-units>	
+	<music value="true" path="music/music_tech.ogg"/>
+		<healthbar>
+			<height value="1"/>
+			<thickness value="0.06"/>
+			<visible value="always"/>
+		</healthbar>
+	<ai-behavior>
+		<worker-units>
+			<unit name="engineer" minimum="10"/>
+		</worker-units>
+		<warrior-units>
+			<unit name="infantry" minimum="10"/>
+		</warrior-units>
+		<resource-producer-units/>
+		<building-units>
+	                <unit name="camp" minimum="1"/>
+			<unit name="barracks" minimum="2"/>
+		</building-units>
+		<upgrades>
+			<upgrade name="stables"/>
+			<upgrade name="encampment"/>
+			<upgrade name="artillery"/>
+		</upgrades>
+		<static-values>
+			<static type-name="MinStaticResourceCount" value="3"/>
+			<static type-name="ScoutResourceRange" value="25"/>
+			<static type-name="MinBuildSpacing" value="2"/>
+		</static-values>
+	</ai-behavior>
+</faction>

@@ -1,4 +1,4 @@
-# DomiNeonic mod for Megaglest 3.7.1
+# DomiNeonic mod for Megaglest
 
 
 ## Installation:

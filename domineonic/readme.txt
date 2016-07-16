@@ -19,10 +19,25 @@ Built on top of revisions by Pafferguy in 2009
 
 Housing resource Icon by gAMeboy CC by Sa
 
+Battle Armor and Airship by Tucho. Taken from originally from Glest CC by Sa
+
 ---------------
 Latest Changes:
 ---------------
 
+Current changes by Ishmaru
+==========================
+-Added New Unit Airship
+-Added New Unit Battle Armor
+-Added Unique Textures for British And French Airship
+-Added Unique Textures for British And French Battle Armor
+
+-Lowered cost of Units
+-Increased production speed
+-Increased Upgrade Costs
+
+Previous changes from Ishmaru
+=============================
 -Includes both French and Britsh Factions
 -Gun Flash/Smoke Fx
 -Units now have team color.
